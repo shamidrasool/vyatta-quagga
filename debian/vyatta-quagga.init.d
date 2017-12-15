@@ -45,7 +45,7 @@ vyatta_quagga_start ()
     elif has_ipv6; then
 	daemons=( zebra ripd ripngd ospfd ospf6d bgpd )
     else
-	daemons=( zebra ripd ospfd bgpd )
+	daemons=( zebra ripd ospfd bgpd isisd )
     fi
 
     # Allow daemons to dump core
