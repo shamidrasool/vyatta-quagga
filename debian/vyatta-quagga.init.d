@@ -77,7 +77,7 @@ vyatta_quagga_stop ()
     if [ $# -gt 0 ] ; then
 	daemons=( $* )
     else
-	daemons=( bgpd ospfd ripd ripngd ospf6d zebra )
+	daemons=( bgpd ospfd ripd ripngd ospf6d zebra isisd)
     fi
 
     log_action_begin_msg "Stopping routing services"
